@@ -110,6 +110,7 @@
         window.setTimeout(function () {
             letterStep.hidden = false;
             openLetterButton.focus({ preventScroll: true });
+            letterStep.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
         }, reducedMotion ? 0 : 2400);
     });
 
